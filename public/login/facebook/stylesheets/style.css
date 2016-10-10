@@ -1,0 +1,450 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+.btn-default {
+    color: white;
+    background-color: green;
+}
+.article {
+    height: 330px;
+    width: 30%;
+    background: lightblue;
+}
+.detailssection
+{
+height: 300px;
+background-color: lightblue;
+}
+header {color:black;}
+
+.nav {height: 460px;width: 100%;text-align: center;margin-top: -4%;}
+.section{height: 60px;background: lightblue;}
+.loginsection{height: 60px;text-align: right;    background: #00628B;    }
+
+@media all and (min-width: 768px) {
+    .nav {text-align:center;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+.homehead
+{
+	    text-align: left;
+        margin-top: 0px;
+    margin-left: 10%;
+        font-weight: bold;
+            font-size: 25px;
+}
+input[type="text"]:valid {
+    color: green;
+}
+
+input[type="text"]:valid ~ .input-validation::before {
+    content: "\2713";
+    color: green;
+}
+
+
+/* Unmatched */
+input[type="text"]:invalid {
+    color: red;
+}
+
+.input-validation {
+    display: inline-block;
+}
+#processing {
+    margin-top: 2em;
+    display: none;
+}
+.bodyback
+{
+	background-image:url("images/career.jpg");
+}
+.clear{clear:both;}/* clear float */
+.imagediv
+{
+	background-image:url("images/imageavtar.png");
+	height: 250px;
+	width: 100%;
+	 background-size: 250px 250px;
+	 background-repeat: no-repeat;
+}
+.homesearch
+{
+	width: 60%;
+	height: 30px;
+	text-align: center;
+/* 	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px; */
+}
+.sectiondiv
+{
+	    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.homeinput
+{
+/* 	    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    height: 25px;
+    width: 50%;
+    text-align: left;
+}
+.homebutton
+{
+/*  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    height: 30px;
+    width: 20%;
+    background-color: #00628B;
+    font-weight: bold;
+    text-align: center;	
+    color: white;
+}
+.signinlabel
+{
+	font-weight: bold;
+	
+}
+.signupinput
+{
+	    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 25px;
+    width: 30%;
+    text-align: center;
+}
+.signupbutton
+{
+	 border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 25px;
+    width: 12%;
+    background-color: blue;
+    font-weight: bold;
+    text-align: center;	
+}
+.signupdiv
+{
+	    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.logininput
+{
+	/*     border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    height: 25px;
+    width: 15%;
+    text-align: center;
+}
+.loginbutton
+{
+    height: 40px;
+    width: 20%;
+    background-color: lightblue;
+    font-size: 17px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.profilebutton
+{
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 25px;
+    width: 15%;
+    background-color: #FFFF81;
+    font-weight: bold;
+    text-align: center;	
+    float: left;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	height: 120px;
+	margin-top: 2%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	
+	
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.panel{
+	height:300px;
+}
+.registerfront
+{
+	    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.modal-body a
+{
+	    text-decoration: none;
+}
+.h1class
+{
+	font-size: 15px;
+}
+
+.h2class
+{
+	font-size: 20px;
+}
+
+.hoverclass:hover
+{
+	color: blue;
+}
+.form-group {
+    
+    margin-top: 15px;
+}
+.modal-dialog {
+    width: 900px;
+}
+.form-control {
+
+    padding: 18px 80px;
+    
+}
+.btn {
+  
+    padding: 6px 60px;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

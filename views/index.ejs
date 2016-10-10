@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+      <!-- load bootstrap css -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+      <!-- load fontawesome -->
+      <link rel="stylesheet" href="stylesheets/bootstrap-social.css">
+      <link rel="stylesheet" href="stylesheets/style.css">
+      
+   </head>
+   <body style="background-color: lightblue;">
+      <div class="flex-container">
+         <header>
+            <h1 class="homehead">CareersPlus</h1>
+         </header>
+         <section class="loginsection">
+         <button id="login" data-toggle="modal" data-target="#myModal" class="btn btn-default" name="Login" value="Login">Sign In</button>
+		  <button class="btn btn-default" onclick="openNav()">SignIn using Social Network</button>
+         </section>
+         <section class="section">
+            <input class="homesearch" type="text" placeholder="Search people/jobs/events"/>
+         </section>
+         <nav class="nav">
+         </nav>
+         <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">SignIn/SignUp</h4>
+                  </div>
+                  <div class="modal-body login-form">
+				  <div class="row">
+				  <div class="col-xs-6">
+                     <div class="panel panel-default" style="    background: antiquewhite;">
+                        <div id="signinfront" class="registerfront">
+                           <a id="signinblock" href="#" class="hoverclass"">
+                              <header class="hoverclass">
+                                 <h3 class="h1class">Have an Account?</h3>
+                                 <h2 class="h2class">Sign In</h2>
+                              </header>
+                           </a>
+                        </div>
+                        <div id="signinback" class="registerfront" >
+                           
+                      
+
+  <form id="signinform" action="/signinform" method="post">
+    <div class="form-group">
+      <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter password" required>
+    </div>
+   
+     <input type="checkbox">Remember me
+    <div class="form-group">
+	<button type="submit" class="btn btn-default">Submit</button>
+	</div>
+    
+  </form>
+
+
+                        </div>
+                     </div>
+		           </div>
+				   <div class="col-xs-6">
+                     <div class="panel panel-default" style="    background: antiquewhite;">
+                        <div id="registerfront" class="registerfront">
+                           <a href="#" id="registerblock" class="hoverclass">
+                              <header class="hoverclass">
+                                 <h3 class="h1class">Need an Account?</h3>
+                                 <h2 class="h2class">Register</h2>
+                              </header>
+                           </a>
+                        </div>
+                        <div id="registerback" class="registerfront" >
+                           
+                        <form id="registerform" action="/registerform" method="post">
+						    <div class="form-group">
+      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Firstname" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Lastname" required>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter password" required>
+    </div>
+   
+    <div class="form-group">
+	<button type="submit" class="btn btn-default">Submit</button>
+	</div>
+    
+  </form>
+                        </div>
+                     </div>
+					 </div>
+					
+			   </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="footer-distributed">
+            <div class="footer-left">
+              
+               <p class="footer-company-name">CareersPlus &copy; 2015</p>
+            </div>
+            <div class="footer-center">
+    
+               <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:support@careersplus.com">support@careersplus.com</a></p>
+               </div>
+            </div>
+            <div class="footer-right">
+               <div class="footer-icons">
+                  <a href="https://www.facebook.com/Kranthicareersplus/"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="sectiondiv">
+<a  style="width: 30%;    margin-left: 35%;" href="/login/facebook" class="btn btn-block btn-social btn-facebook"><span class="fa fa-facebook"></span> Facebook</a>
+</div>
+<div class="sectiondiv">
+<a  style="width: 30%;    margin-left: 35%;" href="#" class="btn btn-block btn-social btn-google"><span class="fa fa-google"></span> Google </a>
+</div>
+<div class="sectiondiv">
+<a style="width: 30%;    margin-left: 35%;" href="#" class="btn btn-block btn-social btn-twitter"><span class="fa fa-twitter"></span> Twitter </a>
+</div>
+</div>
+<div id="main">
+
+</div>
+
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">Errors</h5>
+            </div>
+
+            <div class="modal-body">
+                <!-- The messages container -->
+                <div id="errors"></div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Use any element to open the sidenav -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/validator.js"></script>
+   </body>
+</html>
+<script type="text/javascript">
+if(typeof user != "undefined") {
+ alert(user.status);
+}
+ $("#login").click(function(){
+      
+      $("#signinback").show();
+      $("#signinfront").hide();
+      $("#registerback").hide();
+      $("#registerfront").show();
+      
+      }); 
+       $("#registerblock").click(function(){
+      
+      $("#signinback").hide();
+      $("#signinfront").show();
+      $("#registerback").show();
+      $("#registerfront").hide();
+      
+      });
+           $("#signinblock").click(function(){
+      
+      $("#signinback").show();
+      $("#signinfront").hide();
+      $("#registerback").hide();
+      $("#registerfront").show();
+      
+      });
+   
+      function openNav() {
+   $("#mySidenav").css("width","100%");
+    $("#main").css("width","250");
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    $("#mySidenav").css("width","0%");
+    $("#main").css("margin-left","0");
+}
+      //-->
+</script>

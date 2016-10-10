@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<link rel="stylesheet" href="stylesheets/bootstrap-social.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body style="background-color: lightblue;">
+
+<div class="flex-container">
+<header style="    margin-bottom: 2%;">
+  <h1 class="homehead">CareersPlus</h1>
+  <div style="    float: right;
+    margin-top: -30px;">
+  <p style="    color: blue;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: -12px;"> Welcome, <%= user.name.givenName +''+user.name.familyName %> </p>
+<p><a style="color: blue;" href="/">Sign Out</a></p>
+</div>
+</header>
+
+<section class="loginsection" style="height: 0px;">
+
+</section>
+<section class="detailssection">
+<div style="display: flex;">
+<div style="width: 20%;">
+<div class="imagediv" style="text-align: left;"></div>
+<p><a style="color: Blue;font-weight: bold;" href="#">Upload Picture</a></p>
+</div>
+<div style="width: 80%;">
+<label style="    font-weight: 900;
+    font-size: x-large;"> <%= user.name.givenName +''+user.name.familyName%></label>
+  
+<p style="text-align: left;
+    font-size: small;"> Current Role &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input class="logininput" type="text" placeholder="Role"/> </p>
+<p style="text-align: left;
+    font-size: small;">Current Organization &nbsp;:<input class="logininput" type="text" placeholder="Current Company Name"/> </p>
+<p style="text-align: left;
+    font-size: small;"> Start Date of Work&nbsp;&nbsp;&nbsp;&nbsp; :<input class="logininput" type="date" placeholder="Start Date"/> </p>
+
+    <p style="text-align: left;
+    font-size: small;"><textarea style="    width: 100%;" rows="4" cols="50"></textarea></p>
+<button  style="    margin-right: 1%;" class="profilebutton" name="Login" value="Login">Save your profile</button>
+
+</div>
+</div>
+</section>
+<nav class="nav">
+
+</nav>
+
+
+
+     <footer class="footer-distributed">
+            <div class="footer-left">
+              
+               <p class="footer-company-name">CareersPlus &copy; 2015</p>
+            </div>
+            <div class="footer-center">
+    
+               <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:support@careersplus.com">support@careersplus.com</a></p>
+               </div>
+            </div>
+            <div class="footer-right">
+               <div class="footer-icons">
+                  <a href="https://www.facebook.com/Kranthicareersplus/"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+               </div>
+            </div>
+         </footer>
+</div>
+
+</body>
+</html>
